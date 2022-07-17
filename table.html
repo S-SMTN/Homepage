@@ -52,42 +52,14 @@
                 <script>
                     document.querySelector('input').addEventListener('change', function() {
                         var val = document.getElementById("input").value;
-                        var len = Number(String(val).length);
-                        var answer = "  ";
-                        var odd = 0;
-                        var even = 0;
-                        for (var i = 0; i < len; i++) {
-                            if ((Number(String(val)[i]) % 2) == 0) {
-                                even++;
-                                answer = 'even';
-                            }
-                            else {
-                                odd++;
-                                answer = 'odd';
-                            }
-                        }
-                        document.getElementById("output1").innerHTML = even;
+                        document.getElementById("output3").innerHTML = val;
                     });
                 </script>
                 <td id="body"><div id="output2"></div></td>
                 <script>
                     document.querySelector('input').addEventListener('change', function() {
                         var val = document.getElementById("input").value;
-                        var len = Number(String(val).length);
-                        var answer = "  ";
-                        var odd = 0;
-                        var even = 0;
-                        for (var i = 0; i < len; i++) {
-                            if ((Number(String(val)[i]) % 2) == 0) {
-                                even++;
-                                answer = 'even';
-                            }
-                            else {
-                                odd++;
-                                answer = 'odd';
-                            }
-                        }
-                        document.getElementById("output2").innerHTML = odd;
+                        document.getElementById("output2").innerHTML = val * 2;
                     });
                 </script>
                 <td id="body"><div id="output3"></div></td>
