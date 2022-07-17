@@ -1,0 +1,66 @@
+/* 5 селекторов, не меньше 5 свойств
+1. body 2. table 3. tr 4. tr#top 5. td 6. td#left
+1. background-color 2. color 3. border 4. height 5. width 6. text-align */
+
+body
+{
+    background-color: #e0e0e0;
+    color: #000000;
+}
+table#body
+{
+    border: 3px solid #000000;
+    background-color: #c0c0c0;
+}
+tr#body
+{
+    height: 10px;
+    border: 1px solid #000000;
+}
+tr#body_top
+{
+    background-color: #a0a0a0;
+}
+td#body
+{
+    border: 1px solid #000000;
+    width: 100px;
+    text-align: center;
+}
+td#body_left
+{
+    background-color: #a0a0a0;
+    text-align: center;
+}
+.header
+{
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+a
+{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+tr#head
+{
+    background-color: #300bff;
+    height: 80px;
+}
+td#head
+{
+    text-align: center;
+    width: 330px;
+}
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+    text-indent: 10px;
+}

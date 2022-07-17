@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Table</title>
+    </head>
+    <body>
+        <div class="header">
+            <table id="head">
+                <tr id="head">
+                    <td id="head">
+                        <button type="button" class="btn btn-primary">
+                            <a href="index.html">MAIN PAGE</a>
+                        </button>
+                    </td>
+                    <td id="head"><button type="button" class="btn btn-primary">
+                        <a href="table.html">TABLE</a></button>
+                    </td>
+                    <td id="head"><button type="button" class="btn btn-primary">
+                        <a href="search.html">SEARCH</a></button>
+                    </td>
+                    <td id="head"><button type="button" class="btn btn-primary">
+                        <a href="rick.html">RICK ROLL</a></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1 align="center">Lorem Ipsum</h1>
+        <div class="section"></div>
+        <table align="center" id="body">
+            <tr id="body_top">
+                <td id="body"></td>
+                <td id="body">1</td>
+                <td id="body">2</td>
+                <td id="body">3</td>
+                <td id="body">4</td>
+                <td id="body">5</td>
+                <td id="body">6</td>
+                <td id="body">7</td>
+                <td id="body">8</td>
+                <td id="body">9</td>
+                <td id="body">10</td>
+            </tr>
+            <tr id="body">
+                <td id="body_left">
+                    <input type="number" id="input" value="1" />
+                </td>
+                <td id="body"><div id="output1"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        var len = Number(String(val).length);
+                        var answer = "  ";
+                        var odd = 0;
+                        var even = 0;
+                        for (var i = 0; i < len; i++) {
+                            if ((Number(String(val)[i]) % 2) == 0) {
+                                even++;
+                                answer = 'even';
+                            }
+                            else {
+                                odd++;
+                                answer = 'odd';
+                            }
+                        }
+                        document.getElementById("output1").innerHTML = even;
+                    });
+                </script>
+                <td id="body"><div id="output2"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        var len = Number(String(val).length);
+                        var answer = "  ";
+                        var odd = 0;
+                        var even = 0;
+                        for (var i = 0; i < len; i++) {
+                            if ((Number(String(val)[i]) % 2) == 0) {
+                                even++;
+                                answer = 'even';
+                            }
+                            else {
+                                odd++;
+                                answer = 'odd';
+                            }
+                        }
+                        document.getElementById("output2").innerHTML = odd;
+                    });
+                </script>
+                <td id="body"><div id="output3"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output3").innerHTML = val * 3;
+                    });
+                </script>
+                <td id="body"><div id="output4"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output4").innerHTML = val * 4;
+                    });
+                </script>
+                <td id="body"><div id="output5"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output5").innerHTML = val * 5;
+                    });
+                </script>
+                <td id="body"><div id="output6"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output6").innerHTML = val * 6;
+                    });
+                </script>
+                <td id="body"><div id="output7"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output7").innerHTML = val * 7;
+                    });
+                </script>
+                <td id="body"><div id="output8"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output8").innerHTML = val * 8;
+                    });
+                </script>
+                <td id="body"><div id="output9"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output9").innerHTML = val * 9;
+                    });
+                </script>
+                <td id="body"><div id="output10"></div></td>
+                <script>
+                    document.querySelector('input').addEventListener('change', function() {
+                        var val = document.getElementById("input").value;
+                        document.getElementById("output10").innerHTML = val * 10;
+                    });
+                </script>
+            </tr>
+            <tr id="body">
+                <td id="body_left">2</td>
+                <td id="body">2</td>
+                <td id="body">4</td>
+                <td id="body">6</td>
+                <td id="body">8</td>
+                <td id="body">10</td>
+                <td id="body">12</td>
+                <td id="body">14</td>
+                <td id="body">16</td>
+                <td id="body">18</td>
+                <td id="body">20</td>
+            </tr>
+            <tr id="body">
+                <td id="body_left">3</td>
+                <td id="body">3</td>
+                <td id="body">6</td>
+                <td id="body">9</td>
+                <td id="body">12</td>
+                <td id="body">15</td>
+                <td id="body">18</td>
+                <td id="body">21</td>
+                <td id="body">24</td>
+                <td id="body">27</td>
+                <td id="body">30</td>
+            </tr>
+        </table>
+    </body>
+</html>
